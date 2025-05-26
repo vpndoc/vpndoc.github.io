@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpndoc.github.io/news/article-118634.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>iOS设备上利用蓝奏云加速配置V2Ray的全面指南</title>
+        <meta name="description" content="在现代互联网环境中，用户对网络自由、安全与隐私保护的需求日益增长。尤其是在一些网络环境相对封闭或受限的地区，如何绕过限制、保障个人数据安全，成为了许多用户关心的核心问题。V2Ray作为一款功能强大且多" />
+        <link rel="icon" href="/assets/website/img/vergegithub/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN文档 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpndoc.github.io/news/article-118634.htm" />
+    <meta property="og:site_name" content="VPN文档 订阅教程网" />
+    <meta property="og:title" content="iOS设备上利用蓝奏云加速配置V2Ray的全面指南" />
+    <meta property="og:image" content="https://vpndoc.github.io/uploads/20241103/15d49b828a5017ec3dba44dc48974eb0.webp" />
+        <meta property="og:release_date" content="2025-05-26T09:48:28" />
+    <meta property="og:updated_time" content="2025-05-26T09:48:28" />
+        <meta property="og:description" content="在现代互联网环境中，用户对网络自由、安全与隐私保护的需求日益增长。尤其是在一些网络环境相对封闭或受限的地区，如何绕过限制、保障个人数据安全，成为了许多用户关心的核心问题。V2Ray作为一款功能强大且多" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="iOS设备上利用蓝奏云加速配置V2Ray的全面指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- css here -->
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/meanmenu.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/animate.min.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/scrolltop.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/swiper.min.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/default.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/style.css">
+    <link rel="stylesheet" href="/assets/website/css/vergegithub/responsive.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4TJNDDSMG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M4TJNDDSMG');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- preloaders start -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!-- preloaders end -->
+    <!-- header area start -->
+    <header>
+        <!-- header area start -->
+        <div class="header-area">
+            <div class="container">
+                <div class="row">
+                    <!-- logo start -->
+                    <div class="col-md-4">
+                        <div class="header-logo">
+                            <a href="/">
+                                                                <span>VPN文档</span>
+                                                            </a>
+                        </div>
+                    </div>
+                    <!-- main menu area start -->
+                    <div class="col-md-8">
+                        <div class="main-menu-area float-right">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                                                                <li><a href="/">首页</a></li>
+                                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                            </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                    <!-- main menu area end -->
+                </div>
+            </div>
+        </div>
+        <!-- header area end -->
+    </header>
+    <!-- header area end -->
+    <!-- main area start -->
+    <main>
+        <!-- breadcrumb area start -->
+        <div id="apork-breadcrumb-area" class="apork-breadcrumb-area text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>iOS设备上利用蓝奏云加速配置V2Ray的全面指南</h1>
+                        <ul class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="/" title="首页">首页</a></li>
+                            <li class="breadcrumb-item"><a href="/news/" title="新闻资讯">新闻资讯</a></li>
+                            <li class="breadcrumb-item active">正文</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb area end -->
+        <!-- about area start -->
+        <div class="apork-about-area mt-230 mb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="29" data-end="297">在现代互联网环境中，用户对网络自由、安全与隐私保护的需求日益增长。尤其是在一些网络环境相对封闭或受限的地区，如何绕过限制、保障个人数据安全，成为了许多用户关心的核心问题。V2Ray作为一款功能强大且多协议支持的代理工具，因其灵活性和高安全性，在跨境网络访问和隐私保护领域备受推崇。而在iOS设备上使用V2Ray，结合蓝奏云这类高速云存储服务进行配置文件的分发和加速，不仅极大地方便了用户操作，还提升了下载速度和配置效率。本文将系统梳理iOS设备上通过蓝奏云加速使用V2Ray的安装、配置及优化全过程，帮助你实现稳定、高效的安全上网体验。</p>
+<hr data-start="299" data-end="302">
+<h2 data-start="304" data-end="324">一、V2Ray简介及其网络代理优势</h2>
+<h3 data-start="326" data-end="343">1.1 什么是V2Ray？</h3>
+<p data-start="345" data-end="492">V2Ray是一个开放源码的网络代理平台，专为应对复杂的网络环境设计。它支持多种传输协议（如VMess、Shadowsocks、HTTP/2、WebSocket等），能够灵活地绕过网络封锁和审查机制，实现流量混淆和加密保护。其模块化的设计使得用户可以根据需求定制代理策略，确保数据隐私和访问效率。</p>
+<h3 data-start="494" data-end="515">1.2 V2Ray的安全与功能亮点</h3>
+<ul data-start="517" data-end="630">
+<li data-start="517" data-end="543">
+<p data-start="519" data-end="543"><strong data-start="519" data-end="528">多协议支持</strong>，适配各种网络环境和需求。</p>
+</li>
+<li data-start="544" data-end="573">
+<p data-start="546" data-end="573"><strong data-start="546" data-end="556">高级加密技术</strong>，保护用户数据免受窃听和篡改。</p>
+</li>
+<li data-start="574" data-end="603">
+<p data-start="576" data-end="603"><strong data-start="576" data-end="589">动态路由和负载均衡</strong>，提高连接稳定性和速度。</p>
+</li>
+<li data-start="604" data-end="630">
+<p data-start="606" data-end="630"><strong data-start="606" data-end="614">灵活配置</strong>，满足不同层次用户的定制化需求。</p>
+</li>
+</ul>
+<hr data-start="632" data-end="635">
+<h2 data-start="637" data-end="660">二、蓝奏云在V2Ray配置中的作用与优势</h2>
+<h3 data-start="662" data-end="675">2.1 蓝奏云简介</h3>
+<p data-start="677" data-end="757">蓝奏云是一款国内知名的免费云存储和分享平台，凭借简洁的界面和高速的文件传输能力，广受用户青睐。它支持文件的快速上传、分享和下载，特别适合传输体积不大的配置文件。</p>
+<h3 data-start="759" data-end="783">2.2 利用蓝奏云加速配置文件分发的好处</h3>
+<ul data-start="785" data-end="934">
+<li data-start="785" data-end="846">
+<p data-start="787" data-end="846"><strong data-start="787" data-end="795">快速下载</strong>：蓝奏云具备较强的带宽优势，用户可以迅速获取V2Ray配置文件，避免传统分享方式中的下载缓慢问题。</p>
+</li>
+<li data-start="847" data-end="892">
+<p data-start="849" data-end="892"><strong data-start="849" data-end="857">便捷共享</strong>：用户可以通过生成的链接随时分享配置文件，方便跨设备和跨地域操作。</p>
+</li>
+<li data-start="893" data-end="934">
+<p data-start="895" data-end="934"><strong data-start="895" data-end="903">高可用性</strong>：蓝奏云平台的稳定性保障了配置文件的持续可用性，降低断链风险。</p>
+</li>
+</ul>
+<hr data-start="936" data-end="939">
+<h2 data-start="941" data-end="964">三、iOS设备下载与安装V2Ray客户端</h2>
+<h3 data-start="966" data-end="987">3.1 选择合适的V2Ray客户端</h3>
+<p data-start="989" data-end="1040">在iOS系统中，由于系统权限限制，V2Ray通常以第三方客户端的形式存在。主流且功能全面的客户端包括：</p>
+<ul data-start="1042" data-end="1083">
+<li data-start="1042" data-end="1062">
+<p data-start="1044" data-end="1062"><strong data-start="1044" data-end="1060">Quantumult X</strong></p>
+</li>
+<li data-start="1063" data-end="1083">
+<p data-start="1065" data-end="1083"><strong data-start="1065" data-end="1081">Shadowrocket</strong></p>
+</li>
+</ul>
+<p data-start="1085" data-end="1122">这些应用支持导入V2Ray配置文件，提供直观的连接管理和强大的自定义功能。</p>
+<h3 data-start="1124" data-end="1146">3.2 从App Store下载应用</h3>
+<ul data-start="1148" data-end="1242">
+<li data-start="1148" data-end="1196">
+<p data-start="1150" data-end="1196">打开App Store，搜索“Quantumult X”或“Shadowrocket”。</p>
+</li>
+<li data-start="1197" data-end="1215">
+<p data-start="1199" data-end="1215">选择官方正版应用，下载安装。</p>
+</li>
+<li data-start="1216" data-end="1242">
+<p data-start="1218" data-end="1242">注意部分应用为付费软件，用户可根据需要选择购买。</p>
+</li>
+</ul>
+<hr data-start="1244" data-end="1247">
+<h2 data-start="1249" data-end="1273">四、通过蓝奏云获取与导入V2Ray配置文件</h2>
+<h3 data-start="1275" data-end="1294">4.1 下载V2Ray配置文件</h3>
+<ul data-start="1296" data-end="1396">
+<li data-start="1296" data-end="1326">
+<p data-start="1298" data-end="1326">访问蓝奏云的官方网站或直接通过分享链接打开下载页面。</p>
+</li>
+<li data-start="1327" data-end="1372">
+<p data-start="1329" data-end="1372">点击下载按钮，将V2Ray配置文件保存到iOS设备本地（通常以JSON格式呈现）。</p>
+</li>
+<li data-start="1373" data-end="1396">
+<p data-start="1375" data-end="1396">确保下载的配置文件来源可靠，避免安全隐患。</p>
+</li>
+</ul>
+<h3 data-start="1398" data-end="1421">4.2 导入配置文件到V2Ray客户端</h3>
+<ul data-start="1423" data-end="1547">
+<li data-start="1423" data-end="1458">
+<p data-start="1425" data-end="1458">打开Quantumult X或Shadowrocket客户端。</p>
+</li>
+<li data-start="1459" data-end="1481">
+<p data-start="1461" data-end="1481">寻找“导入配置”或“添加配置”选项。</p>
+</li>
+<li data-start="1482" data-end="1513">
+<p data-start="1484" data-end="1513">从本地文件中选择刚才下载的JSON配置文件，完成导入。</p>
+</li>
+<li data-start="1514" data-end="1547">
+<p data-start="1516" data-end="1547">根据需要对配置参数进行微调，如服务器地址、端口号、加密方式等。</p>
+</li>
+</ul>
+<hr data-start="1549" data-end="1552">
+<h2 data-start="1554" data-end="1578">五、iOS设备上V2Ray的连接与使用技巧</h2>
+<h3 data-start="1580" data-end="1592">5.1 连接流程</h3>
+<ul data-start="1594" data-end="1688">
+<li data-start="1594" data-end="1614">
+<p data-start="1596" data-end="1614">在客户端主界面选择已导入的配置。</p>
+</li>
+<li data-start="1615" data-end="1647">
+<p data-start="1617" data-end="1647">点击“连接”按钮，客户端将尝试与代理服务器建立加密通道。</p>
+</li>
+<li data-start="1648" data-end="1688">
+<p data-start="1650" data-end="1688">成功连接后，状态指示通常显示为“已连接”，此时流量即通过V2Ray代理转发。</p>
+</li>
+</ul>
+<h3 data-start="1690" data-end="1704">5.2 网络速度测试</h3>
+<ul data-start="1706" data-end="1799">
+<li data-start="1706" data-end="1739">
+<p data-start="1708" data-end="1739">推荐使用Speedtest等网络测速工具进行连接质量检测。</p>
+</li>
+<li data-start="1740" data-end="1771">
+<p data-start="1742" data-end="1771">观察延迟（Ping值）、下载和上传速度，确保达到预期。</p>
+</li>
+<li data-start="1772" data-end="1799">
+<p data-start="1774" data-end="1799">若速度不理想，可尝试切换服务器节点或调整加密方式。</p>
+</li>
+</ul>
+<h3 data-start="1801" data-end="1815">5.3 常见连接优化</h3>
+<ul data-start="1817" data-end="1903">
+<li data-start="1817" data-end="1845">
+<p data-start="1819" data-end="1845"><strong data-start="1819" data-end="1831">定期更新配置文件</strong>，避免过期导致连接失败。</p>
+</li>
+<li data-start="1846" data-end="1872">
+<p data-start="1848" data-end="1872"><strong data-start="1848" data-end="1861">启用混淆和伪装功能</strong>，增强流量隐蔽性。</p>
+</li>
+<li data-start="1873" data-end="1903">
+<p data-start="1875" data-end="1903"><strong data-start="1875" data-end="1890">合理选择服务器地理位置</strong>，优先选择延迟较低的节点。</p>
+</li>
+</ul>
+<hr data-start="1905" data-end="1908">
+<h2 data-start="1910" data-end="1929">六、解决使用过程中可能遇到的问题</h2>
+<h3 data-start="1931" data-end="1944">6.1 设备兼容性</h3>
+<ul data-start="1946" data-end="1991">
+<li data-start="1946" data-end="1991">
+<p data-start="1948" data-end="1991">V2Ray客户端一般支持iOS 12及以上版本，使用前请确保设备系统版本符合要求。</p>
+</li>
+</ul>
+<h3 data-start="1993" data-end="2007">6.2 连接失败排查</h3>
+<ul data-start="2009" data-end="2119">
+<li data-start="2009" data-end="2037">
+<p data-start="2011" data-end="2037">检查网络连接状态，确保Wi-Fi或蜂窝数据正常。</p>
+</li>
+<li data-start="2038" data-end="2068">
+<p data-start="2040" data-end="2068">确认配置文件中服务器地址、端口、UUID等信息无误。</p>
+</li>
+<li data-start="2069" data-end="2089">
+<p data-start="2071" data-end="2089">尝试重新导入配置文件或更换节点。</p>
+</li>
+<li data-start="2090" data-end="2119">
+<p data-start="2092" data-end="2119">查阅客户端日志获取错误信息，必要时联系服务提供方支持。</p>
+</li>
+</ul>
+<h3 data-start="2121" data-end="2134">6.3 安全性保障</h3>
+<ul data-start="2136" data-end="2214">
+<li data-start="2136" data-end="2160">
+<p data-start="2138" data-end="2160">经常更新客户端和配置文件，避免安全漏洞。</p>
+</li>
+<li data-start="2161" data-end="2193">
+<p data-start="2163" data-end="2193">使用复杂密码和JWT Token等验证机制提升安全等级。</p>
+</li>
+<li data-start="2194" data-end="2214">
+<p data-start="2196" data-end="2214">避免在不可信网络环境下传输敏感数据。</p>
+</li>
+</ul>
+<hr data-start="2216" data-end="2219">
+<h2 data-start="2221" data-end="2231">七、总结与展望</h2>
+<p data-start="2233" data-end="2404">借助蓝奏云高速、稳定的文件分发优势，iOS用户在配置V2Ray时可以获得显著的体验提升。通过详细讲解下载、导入、连接以及常见问题的解决策略，本文希望帮助广大用户轻松掌握iOS端V2Ray的使用，保障网络自由和数据安全。未来，随着技术的不断发展，V2Ray和相关辅助服务将更加智能化和人性化，使得用户能够无缝跨越网络限制，享受更自由的数字生活。</p>
+<hr data-start="2406" data-end="2409">
+<h2 data-start="2411" data-end="2418">精彩点评</h2>
+<p data-start="2420" data-end="2587" data-is-last-node="" data-is-only-node="">本文从基础介绍到操作细节，环环相扣地呈现了iOS设备利用蓝奏云加速配置V2Ray的完整流程。语言简洁明快，条理清晰，既适合初次接触的普通用户，也满足有一定技术基础的进阶者的需求。尤其对蓝奏云的使用场景剖析深入浅出，凸显了其实用价值。整体文风专业而不失亲和力，极大地降低了学习门槛，是一篇兼具实用性和指导性的优质技术分享，值得广泛推广。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-118325.htm">全面解析支持Vmess的IP：科学上网的安全利器与获取指南</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-107455.htm" title="v2rayng能破解限速吗？全面解析与使用指南">v2rayng能破解限速吗？全面解析与使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-114281.htm" title="解锁极致体验：琉璃玩家科学上网全攻略">解锁极致体验：琉璃玩家科学上网全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-108221.htm" title="Clash软件到底干什么？全面解读与使用指南">Clash软件到底干什么？全面解读与使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-112445.htm" title="Shadowrocket iOS免费版：详细下载安装与配置指南">Shadowrocket iOS免费版：详细下载安装与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-116441.htm" title="深入掌握V2Ray最新版App：安装、配置与实战全攻略">深入掌握V2Ray最新版App：安装、配置与实战全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-112090.htm" title="Shadowrocket完全使用指南：从入门到进阶的科学上网全攻略（2023最新版）">Shadowrocket完全使用指南：从入门到进阶的科学上网全攻略（2023最新版）</a></li>
+                        <li class="py-2"><a href="/news/article-118325.htm" title="全面解析支持Vmess的IP：科学上网的安全利器与获取指南">全面解析支持Vmess的IP：科学上网的安全利器与获取指南</a></li>
+                        <li class="py-2"><a href="/news/article-118020.htm" title="手机Clash新手到高手全攻略：详细使用指南与实战技巧分享">手机Clash新手到高手全攻略：详细使用指南与实战技巧分享</a></li>
+                        <li class="py-2"><a href="/news/article-118634.htm" title="iOS设备上利用蓝奏云加速配置V2Ray的全面指南">iOS设备上利用蓝奏云加速配置V2Ray的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-113404.htm" title="时速云搭建科学上网的完整指南：一步步实现无缝网络自由">时速云搭建科学上网的完整指南：一步步实现无缝网络自由</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">33</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about area end -->
+                <!-- footer area start -->
+        <footer id="apork-footer-area" class="apork-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="footer-copyright text-center py-5">
+                                                <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                            <p>
+                                <a href="/">VPN文档 订阅教程网</a> 版权所有 Powered by WordPress
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area end -->
+        <!-- scrolltop button -->
+        <div class="material-scrolltop"></div>
+        <!-- js here -->
+        <script src="/assets/website/js/frontend/vergegithub/modernizr-3.5.0.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/jquery-1.12.4.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/popper.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/bootstrap.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/swiper.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/meanmenu.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/magnific-popup.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/owl.carousel.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/waypoints.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/counterup.min.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/scrolltop.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/ajax-form.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/plugins.js"></script>
+        <script src="/assets/website/js/frontend/vergegithub/main.js"></script>
+        <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+        <script src="/assets/website/js/frontend/G.js"></script>
+    </main>
+    <!-- main area end -->
+</body>
+
+</html>
