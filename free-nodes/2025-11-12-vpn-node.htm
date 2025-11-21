@@ -342,9 +342,9 @@ A4：大部分网站均支持访问，但具体情况取决于代理节点的质
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些好处？</h5></div>
     <div class="panel-body">
-        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
+        多路复用允许多个短连接共享同一 QUIC 通道，减少握手延迟和资源消耗。在高并发或频繁短连接场景下，能显著提升吞吐量和稳定性，尤其适合游戏或即时通讯应用。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 连接延迟过高该如何优化？</h5></div>
@@ -352,14 +352,29 @@ A4：大部分网站均支持访问，但具体情况取决于代理节点的质
         可尝试切换传输协议（如 WS、gRPC）、调整 MTU 或启用 MUX 多路复用功能。同时检查服务器地理位置、带宽和延迟，并选择最优节点以降低延迟。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些好处？</h5></div>
-    <div class="panel-body">
-        多路复用允许多个短连接共享同一 QUIC 通道，减少握手延迟和资源消耗。在高并发或频繁短连接场景下，能显著提升吞吐量和稳定性，尤其适合游戏或即时通讯应用。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的 Rule Provider 功能是干什么的？</h5></div>
     <div class="panel-body">
         Rule Provider 是 Clash 的规则订阅机制，它可以通过远程 URL 自动更新分流规则文件。这样用户无需手动修改本地配置，就能保持规则同步更新，例如广告过滤或流媒体分流。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 多路复用对即时通讯的优势是什么？</h5></div>
+    <div class="panel-body">
+        多路复用可让多个短连接共享同一通道，减少握手次数和加密开销，提高吞吐量和连接稳定性。适合即时通讯应用，保证消息快速传输和稳定接收。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 支持 Reality 吗？</h5></div>
+    <div class="panel-body">
+        支持。Hiddify Next 基于 sing-box 内核，可加载 Vless+Reality、Trojan+TLS 等高级协议配置。用户可直接导入机场订阅，无需手动修改复杂参数。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 节点分组如何自动切换最佳节点？</h5></div>
+    <div class="panel-body">
+        将节点按延迟、地区或用途分组，并启用策略组功能，系统会根据节点延迟和健康状态自动切换到最佳节点，保证网页、视频和游戏连接稳定流畅。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
+    <div class="panel-body">
+        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 的“节点切换策略”如何配置？</h5></div>
@@ -370,21 +385,6 @@ A4：大部分网站均支持访问，但具体情况取决于代理节点的质
     <div class="panel-heading"><h5>Mellow 是否支持 IPv6 流量代理？</h5></div>
     <div class="panel-body">
         Mellow 支持 IPv6，只需在配置文件中启用 IPv6 DNS 解析并确认操作系统开启 IPv6 路由功能。部分节点若不支持 IPv6，则相关请求会自动回退到 IPv4，保证兼容性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 支持 Reality 吗？</h5></div>
-    <div class="panel-body">
-        支持。Hiddify Next 基于 sing-box 内核，可加载 Vless+Reality、Trojan+TLS 等高级协议配置。用户可直接导入机场订阅，无需手动修改复杂参数。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 多路复用对即时通讯的优势是什么？</h5></div>
-    <div class="panel-body">
-        多路复用可让多个短连接共享同一通道，减少握手次数和加密开销，提高吞吐量和连接稳定性。适合即时通讯应用，保证消息快速传输和稳定接收。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分组如何自动切换最佳节点？</h5></div>
-    <div class="panel-body">
-        将节点按延迟、地区或用途分组，并启用策略组功能，系统会根据节点延迟和健康状态自动切换到最佳节点，保证网页、视频和游戏连接稳定流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 模式能减少握手延迟吗？</h5></div>
@@ -418,16 +418,16 @@ A4：大部分网站均支持访问，但具体情况取决于代理节点的质
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-11-vpn-github.htm" title="VPN文档 - 11月11日20.5M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点分享">VPN文档 - 11月11日20.5M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-20-share-vpn.htm" title="VPN文档 - 10月20日19.8M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 10月20日19.8M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-18-free-vpn.htm" title="VPN文档 - 10月18日21.7M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点分享">VPN文档 - 10月18日21.7M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-20-vpn-free.htm" title="VPN文档 - 11月20日21.3M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 11月20日21.3M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-18-free-node-subscribe.htm" title="VPN文档 - 11月18日19.9M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享">VPN文档 - 11月18日19.9M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-27-free-node-subscribe.htm" title="VPN文档 - 10月27日22.9M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享">VPN文档 - 10月27日22.9M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-6-top-vpn.htm" title="VPN文档 - 10月6日22.4M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点订阅节点分享">VPN文档 - 10月6日22.4M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-13-vpn-github.htm" title="VPN文档 - 11月13日19.7M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享">VPN文档 - 11月13日19.7M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-19-vpn-proxy.htm" title="VPN文档 - 10月19日21.5M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享">VPN文档 - 10月19日21.5M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-9-node-share.htm" title="VPN文档 - 10月9日19.1M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点分享">VPN文档 - 10月9日19.1M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-22-vpn-github.htm" title="VPN文档 - 10月22日22.4M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点分享">VPN文档 - 10月22日22.4M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-9-free-vpn.htm" title="VPN文档 - 11月9日21.5M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 11月9日21.5M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-free-node-subscribe.htm" title="VPN文档 - 10月26日20.7M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享">VPN文档 - 10月26日20.7M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-14-share-vpn.htm" title="VPN文档 - 10月14日19.8M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享">VPN文档 - 10月14日19.8M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-free-node-subscribe.htm" title="VPN文档 - 10月12日22.7M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点分享">VPN文档 - 10月12日22.7M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-4-vpn-free.htm" title="VPN文档 - 11月4日21.3M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享">VPN文档 - 11月4日21.3M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-1-mianfei-vpn.htm" title="VPN文档 - 11月1日18.2M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 11月1日18.2M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-5-free-node-subscribe.htm" title="VPN文档 - 10月5日23M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点分享">VPN文档 - 10月5日23M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点分享</a></li>
                     </ul>
     </div>
 </div>
@@ -439,7 +439,7 @@ A4：大部分网站均支持访问，但具体情况取决于代理节点的质
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
