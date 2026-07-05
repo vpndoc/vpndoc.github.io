@@ -312,24 +312,19 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
-    <div class="panel-body">
-        通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 节点如何正确配置证书？</h5></div>
-    <div class="panel-body">
-        TLS 证书必须有效且域名匹配，否则客户端无法建立连接。建议使用受信任证书并确保证书链完整，可保证节点安全和长期可用性，同时提高伪装效果和抗封锁能力。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的多节点分流如何设置？</h5></div>
     <div class="panel-body">
         可通过策略组定义不同节点用途和优先级，结合规则文件将特定域名、IP 或端口流量分流至相应节点，实现游戏、视频或网页加速，并优化整体网络性能和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 gRPC 传输方式有哪些优势？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化游戏体验？</h5></div>
     <div class="panel-body">
-        V2Ray gRPC 传输支持多路复用和长连接，减少握手次数。它对高延迟网络和移动网络非常友好，同时可通过 TLS 加密保护数据，提高隐蔽性和稳定性。<hr />    </div>
+        Shadowrocket 会定期测速节点延迟和丢包率，并结合策略组自动切换最佳节点。保证游戏流量走低延迟节点，减少延迟和掉线，提高游戏流畅度和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
+    <div class="panel-body">
+        通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 是否支持节点手动排序？</h5></div>
@@ -342,6 +337,11 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
         在 V2Ray 中可以通过修改 config.json 文件中的 routing 部分来自定义路由规则。用户可以根据 IP 段、域名或地理位置来决定流量的去向，从而实现自动分流或访问加速的效果。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的路由规则可设置哪些匹配条件？</h5></div>
+    <div class="panel-body">
+        路由规则支持按域名、IP 地址、端口、协议类型或用户标签进行匹配。结合策略组，可实现国内直连、国外代理或特定节点定向分流，满足不同网络需求。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 使用 AEAD 加密的优势是什么？</h5></div>
     <div class="panel-body">
         AEAD 加密提供更强的安全性和抗重放攻击能力，同时隐藏流量特征，降低被 DPI 检测风险。在高封锁环境下使用，可提升连接稳定性和长期可用性。<hr />    </div>
@@ -352,14 +352,14 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
         Netch 的 Socks 模式允许用户将代理仅应用于指定进程，而非全局网络。此模式非常适合单个游戏或程序代理，避免影响其他应用的连接方式与速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化游戏体验？</h5></div>
+    <div class="panel-heading"><h5>Trojan 节点如何正确配置证书？</h5></div>
     <div class="panel-body">
-        Shadowrocket 会定期测速节点延迟和丢包率，并结合策略组自动切换最佳节点。保证游戏流量走低延迟节点，减少延迟和掉线，提高游戏流畅度和稳定性。<hr />    </div>
+        TLS 证书必须有效且域名匹配，否则客户端无法建立连接。建议使用受信任证书并确保证书链完整，可保证节点安全和长期可用性，同时提高伪装效果和抗封锁能力。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的路由规则可设置哪些匹配条件？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的 gRPC 传输方式有哪些优势？</h5></div>
     <div class="panel-body">
-        路由规则支持按域名、IP 地址、端口、协议类型或用户标签进行匹配。结合策略组，可实现国内直连、国外代理或特定节点定向分流，满足不同网络需求。    </div>
+        V2Ray gRPC 传输支持多路复用和长连接，减少握手次数。它对高延迟网络和移动网络非常友好，同时可通过 TLS 加密保护数据，提高隐蔽性和稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -389,15 +389,13 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
     <div class="panel-body">
         <div class="row">
             <div class="text-center">
-                <a href="javascript:;" class="js_to" data-url="https://www.futizi.net/?code=" data-type="Luniuyun" data-code="svvkQf3y" target="_blank">
-                    <img src="/assets/website/img/G/luniuyun.webp" class="avatar" alt="绿牛云">
+                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">
+                    <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
                 </a>
                 <dl>
-                    <dt><a href="javascript:;" class="js_to" data-url="https://www.futizi.net/?code=" data-type="Luniuyun" data-code="svvkQf3y" target="_blank">绿牛云</a></dt>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></dt>
                     <dd>
-                        <p>高速稳定的网络加速</p>
-                        <p>畅享全球内容，访问 ChatGPT、TikTok、Google 等热门网站。
-全平台支持 · 7×24 专业客服 · 采用军工级安全加密传输技术。</p>                    </dd>
+                        <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
                 </dl>
             </div>
         </div>
@@ -409,16 +407,16 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-13-top-vpn-node.htm" title="VPN文档 - 5月13日21.1M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点订阅节点分享">VPN文档 - 5月13日21.1M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-19-top-vpn.htm" title="VPN文档 - 6月19日18.3M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点分享">VPN文档 - 6月19日18.3M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-free-node-subscribe-links.htm" title="VPN文档 - 5月3日21.6M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点分享">VPN文档 - 5月3日21.6M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-6-26-free-vpn-node.htm" title="VPN文档 - 6月26日18.6M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 6月26日18.6M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-23-vpn-node.htm" title="VPN文档 - 5月23日22.6M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享">VPN文档 - 5月23日22.6M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-27-share-vpn.htm" title="VPN文档 - 6月27日20.4M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享">VPN文档 - 6月27日20.4M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-21-free-node-subscribe-links.htm" title="VPN文档 - 6月21日20.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅节点分享">VPN文档 - 6月21日20.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-9-vpn-proxy.htm" title="VPN文档 - 5月9日21.3M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点订阅节点分享">VPN文档 - 5月9日21.3M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-10-free-node-subscribe.htm" title="VPN文档 - 5月10日18M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅节点分享">VPN文档 - 5月10日18M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-24-vpn-proxy.htm" title="VPN文档 - 5月24日22.7M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点订阅节点分享">VPN文档 - 5月24日22.7M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-19-top-vpn.htm" title="VPN文档 - 6月19日18.3M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点分享">VPN文档 - 6月19日18.3M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-21-free-node-subscribe-links.htm" title="VPN文档 - 5月21日21M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享">VPN文档 - 5月21日21M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-16-vpn-free.htm" title="VPN文档 - 5月16日21.9M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 5月16日21.9M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-14-vpn-github.htm" title="VPN文档 - 5月14日22.4M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点分享">VPN文档 - 5月14日22.4M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-28-vpn-proxy.htm" title="VPN文档 - 6月28日19.6M/S|免费Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点分享">VPN文档 - 6月28日19.6M/S|免费Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-18-top-vpn-node.htm" title="VPN文档 - 6月18日22.5M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅节点分享">VPN文档 - 6月18日22.5M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-27-share-vpn.htm" title="VPN文档 - 6月27日20.4M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享">VPN文档 - 6月27日20.4M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-5-free-vpn.htm" title="VPN文档 - 7月5日22.3M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅节点分享">VPN文档 - 7月5日22.3M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -430,7 +428,10 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">28</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
+                <h4><span class="badge" style="float: right;">5</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
@@ -462,9 +463,7 @@ A：推荐加入Clash中文交流群、访问GitHub Issue区，或在Telegram中
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://www.futizi.net/?code=" data-type="Luniuyun" data-code="svvkQf3y" target="_blank">绿牛云</a></b> <p>高速稳定的网络加速</p>
-                        <p>畅享全球内容，访问 ChatGPT、TikTok、Google 等热门网站。
-全平台支持 · 7×24 专业客服 · 采用军工级安全加密传输技术。</p></div>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
                                                 <p>
                                 <a href="/">VPN文档 订阅教程网</a> 版权所有 Powered by WordPress
                             </p>
